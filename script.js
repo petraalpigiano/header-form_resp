@@ -11,3 +11,12 @@ hamburger.addEventListener("click", () => {
 forms.addEventListener("submit", (event) => {
   event.preventdefault();
 });
+
+fetch("https://api.themoviedb.org/3/movie/popular") // di default fa un chiamata GET all API
+  .then((response) => response.json()) // return value/risultato: una promessa che si risolve in un oggetto JS, quindi te lo parsa da JSON a JS object
+  .then((data) => {
+    console.log(data.results); //gestisce i dati trasformati in un oggetto JS
+  })
+  .catch((error) => {
+    console.error("Errore nella richiesta:", error); //cattura eventuali errori
+  });
