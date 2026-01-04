@@ -33,23 +33,47 @@
     </header>
     <!-- MAIN -->
     <main class="container-main">
-      <form action="">
+      <form class="contact-form" action="">
         <div class="row">
           <div class="col-50">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" autocomplete="on" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="on"
+              required
+            />
           </div>
           <div class="col-50">
             <label for="surname">Cognome</label>
-            <input type="text" id="surname" name="surname" autocomplete="on" />
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              autocomplete="on"
+              required
+            />
           </div>
           <div class="col-50">
             <label for="cel">Telefono</label>
-            <input type="number" id="cel" name="cel" autocomplete="on" />
+            <input
+              type="number"
+              id="cel"
+              name="cel"
+              autocomplete="on"
+              required
+            />
           </div>
           <div class="col-50">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="on" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="on"
+              required
+            />
           </div>
           <div class="col-100">
             <label for="message">Messaggio</label>
@@ -58,6 +82,7 @@
               name="message"
               rows="4"
               autocomplete="on"
+              required
             ></textarea>
           </div>
           <div class="col-100 button">
